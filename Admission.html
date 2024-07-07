@@ -25,13 +25,13 @@
         }
         
         .container {
-            max-width: 75%;
+            max-width: 55%;
             height: 100%;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #94939360;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
             margin-top: 20px;
             display: flex;
             justify-content: center;
@@ -46,9 +46,9 @@
         
         .course-list {
             list-style-type: none;
-            width: 70%;
+            width: 50%;
             padding: 0;
-            margin-bottom: 20px;
+            
         }
 
         .course-list a {
@@ -57,40 +57,84 @@
             font-weight: 540;
         }
         
+        
         .course-item {
             background-color: #f0f0f0;
             padding: 10px 15px;
-            margin-bottom: 10px;
-            border-radius: 5px;
+            margin-bottom: 5px;
+            /* border-radius: 5px; */
+        }
+
+        .courses {
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hov:hover {
+            background-color: antiquewhite;
+        }
+
+        .bk-col {
+            background-color: #333;
+            color:#f0f0f0 ;
+            border-radius: 0;
+            margin-bottom: 0;
+        }
+
+        .center {
+            text-align: center;
         }
         
         .contact-heading {
-            margin-top: 30px;
+            margin-top: 70%;
             margin-bottom: 10px;
+        }
+
+        .contact{
+            margin-bottom: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         
         .contact-number {
             font-size: 1.2rem;
             font-weight: bold;
-            color: #3182ce;
+            color: #4e9ae1;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="admission-heading">Our branches</h1>
+        <h1 class="admission-heading">Our Courses</h1>
+       <div class="courses">
+        <ul class="course-list">
+            
+                <a href="#"><li class="course-item bk-col">COURSES</li></a>
+                <a href="#"><li class="course-item hov">BTech</li></a>
+                <a href="#"><li class="course-item hov">MTech</li></a>
+                <a href="#"><li class="course-item hov">MBA</li></a>
+                <a href="#"><li class="course-item hov">Diploma</li></a>
+            
+        </ul>
         <ul class="course-list">
             <a href="#">
-                <li class="course-item">BTech</li>
-                <li class="course-item">MTech</li>
-                <li class="course-item">MBA</li>
-                <li class="course-item">Diploma</li>
+                <li class="course-item bk-col center">Duration</li>
+                <li class="course-item center">4 Years</li>
+                <li class="course-item center">2 Years</li>
+                <li class="course-item center">2 Years</li>
+                <li class="course-item center">3 Years</li>
             </a>
         </ul>
-        <h1 class="contact-heading">Admission Team</h2>
-        <p class="contact-number">+91 9658036289</p></a>
-        <p class="contact-number">+91 9776170254</p>
-        <p class="contact-number">+91 8637273243</p>
+       </div>
+       <div class="contact">
+        <h1 class="contact-heading">Contact For Admission</h1>
+            <p class="contact-number">+91 9658036289</p></a>
+            <p class="contact-number">+91 9776170254</p>
+            <p class="contact-number">+91 8637273243</p>
+       </div>
     </div>
 </body>
 </html>
