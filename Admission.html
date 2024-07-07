@@ -43,6 +43,43 @@
             text-align: center;
             margin-bottom: 20px;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border:1px solid black;
+        }
+
+        th {
+            background-color: #333;
+            color: #f0f0f0;
+        }
+
+        td {
+            background-color: #f0f0f0;
+        }
+
+        tr:nth-child(even) td {
+            background-color: antiquewhite;
+        }
+
+
+        @media (max-width: 767px) {
+            .container {
+                max-width: 90%;
+            }
+
+            .hov:hover {
+                background-color: rgba(22, 22, 22, 0.141);
+            }
+            
+        }
         
         .course-list {
             list-style-type: none;
@@ -73,7 +110,7 @@
         }
 
         .hov:hover {
-            background-color: antiquewhite;
+            background-color: rgba(22, 22, 22, 0.141);
         }
 
         .bk-col {
@@ -90,6 +127,7 @@
         .contact-heading {
             margin-top: 70%;
             margin-bottom: 10px;
+            text-align: center;
         }
 
         .contact{
@@ -109,32 +147,38 @@
 <body>
     <div class="container">
         <h1 class="admission-heading">Our Courses</h1>
-       <div class="courses">
-        <ul class="course-list">
-            
-                <a href="#"><li class="course-item bk-col">COURSES</li></a>
-                <a href="#"><li class="course-item hov">BTech</li></a>
-                <a href="#"><li class="course-item hov">MTech</li></a>
-                <a href="#"><li class="course-item hov">MBA</li></a>
-                <a href="#"><li class="course-item hov">Diploma</li></a>
-            
-        </ul>
-        <ul class="course-list">
-            <a href="#">
-                <li class="course-item bk-col center">Duration</li>
-                <li class="course-item center">4 Years</li>
-                <li class="course-item center">2 Years</li>
-                <li class="course-item center">2 Years</li>
-                <li class="course-item center">3 Years</li>
-            </a>
-        </ul>
-       </div>
-       <div class="contact">
-        <h1 class="contact-heading">Contact For Admission</h1>
-            <p class="contact-number">+91 9658036289</p></a>
+        <table>
+            <thead>
+                <tr>
+                    <th>COURSES</th>
+                    <th>DURATION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="hov"><a href="#"  style="text-decoration: none; color: #333; font-weight: 540;">BTech</a></td>
+                    <td style="font-weight: 600">4 Years</td>
+                </tr>
+                <tr>
+                    <td class="hov"><a href="#" style="text-decoration: none; color: #333; font-weight: 540;">MTech</a></td>
+                    <td style="font-weight: 600;">2 Years</td>
+                </tr>
+                <tr>
+                    <td class="hov"><a href="#" style="text-decoration: none; color: #333; font-weight: 540;">MBA</a></td>
+                    <td style="font-weight: 600">2 Years</td>
+                </tr>
+                <tr>
+                    <td class="hov"><a href="#" style="text-decoration: none; color: #333; font-weight: 540;">Diploma</a></td>
+                    <td style="font-weight: 600">3 Years</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="contact">
+            <h1 class="contact-heading">Contact For Admission</h1>
+            <p class="contact-number">+91 9658036289</p>
             <p class="contact-number">+91 9776170254</p>
             <p class="contact-number">+91 8637273243</p>
-       </div>
+        </div>
     </div>
 </body>
 </html>
